@@ -1,0 +1,44 @@
+Introduction
+
+This paper concentrates on the development of the basic ideas and distinguishes two 
+periods - Summer 1956 through Summer 1958 when most of the key ideas were developed 
+(some of which were implemented in the FORTRAN based FLPL), and Fall 1958 through 
+1962 when the programming language was implemented and applied to problems of 
+artificial intelligence. After 1962, the development of LISP became multi-stranded, 
+and different ideas were pursued in different places.
+
+Except where I give credit to someone else for an idea or decision, I should be 
+regarded as tentatively claiming credit for it or else regarding it as a consequence 
+of previous decisions. However, I have made mistakes about such matters in the past, 
+and I have received very little response to requests for comments on drafts of this 
+paper. It is particularly easy to take as obvious a feature that cost someone else 
+considerable thought long ago. As the writing of this paper approaches its conclusion, 
+I have become aware of additional sources of information and additional areas of 
+uncertainty.
+
+As a programming language, LISP is characterized by the following ideas: computing with 
+symbolic expressions rather than numbers, representation of symbolic expressions and other 
+information by list structure in the memory of a computer, representation of information 
+in external media mostly by multi-level lists and sometimes by S-expressions, a small 
+set of selector and constructor operations expressed as functions, composition of functions 
+as a tool for forming more complex functions, the use of conditional expressions for 
+getting branching into function definitions, the recursive use of conditional expressions 
+as a sufficient tool for building computable functions, the use of -expressions for naming 
+functions, the representation of LISP programs as LISP data, the conditional expression 
+interpretation of Boolean connectives, the LISP function eval that serves both as a formal 
+definition of the language and as an interpreter, and garbage collection as a means of
+handling the erasure problem. LISP statements are also used as a command language when LISP 
+is used in a time-sharing environment.
+
+Some of these ideas were taken from other languages, but most were new. Towards the end of 
+the initial period, it became clear that this combination of ideas made an elegant 
+mathematical system as well as a practical programming language. Then mathematical neatness 
+became a goal and led to pruning some features from the core of the language. This was 
+partly motivated by esthetic reasons and partly by the belief that it would be easier to 
+devise techniques for proving programs correct if the semantics were compact and without 
+exceptions. The results of (Cartwright 1976) and (Cartwright and McCarthy 1978), which show 
+that LISP programs can be interpreted as sentences and schemata of first order logic, provide 
+new confirmation of the original intuition that logical neatness would pay off. 
+
+Source: http://www-formal.stanford.edu/jmc/history/lisp/lisp.html
+by John McCarthy, 12 February 1979
